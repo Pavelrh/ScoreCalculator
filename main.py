@@ -53,6 +53,7 @@ for i in range(epoch):
 print(m, b)
 
 plt.scatter(data.X, data.Y, color="black")
+# this plots a regression line on the plot for the given range of x values and using slope(m) + y intercept(b)
 plt.plot(list(range(2, 10)), [m * x + b for x in range(2,10)], color="red")
 plt.show()
 

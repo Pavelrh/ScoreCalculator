@@ -3,4 +3,6 @@ import matplotlib.pyplot as plt
 
 data = pd.read_csv('score.csv')
 
-print(data)
+plt.scatter(data.X, data.Y)
+
+plt.show()

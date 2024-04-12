@@ -55,3 +55,9 @@ print(m, b)
 plt.scatter(data.X, data.Y, color="black")
 plt.plot(list(range(2, 10)), [m * x + b for x in range(2,10)], color="red")
 plt.show()
+
+# study hours should be in a range of 1 - 9.9
+custom_studyHours = 6.8
+custom_studyScore = m * custom_studyHours + b
+
+print(f"You've studied for {custom_studyHours} hours and you're predicted score is {custom_studyScore}")
